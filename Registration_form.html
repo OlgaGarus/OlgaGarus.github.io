@@ -50,9 +50,63 @@
                 Регистрация на конференцию
             </h1>
             <form action="" method="POST">
-                <label for="user_name">Фамилия, имя и отчество полностью</label>
-            <input type="text" name="user_name" id="user_name">
-            <input type="submit" value="Регистрация">
+                <!-- Имя (должны быть указаны полностью фамилия, имя и отчество), -->
+                <div>
+                    <label for="user_name">Фамилия, имя и отчество полностью</label>
+                    <input type="text" name="user_name" id="user_name" required 
+                        placeholder="ФИО"
+                        pattern="[А-Я][а-я -]+[А-Я][а-я -]+[А-Я][а-я -]+">
+                </div>
+                
+                <!-- контактный телефон,
+                адрес электронной почты,  -->
+                <div>
+                    <label for="tel_number">Номер телефона</label>
+                    <input type="tel" name="tel_number" id="tel_number" required 
+                        pattern="[0-9]+">
+                </div>
+                
+                <!-- список с секциями конференции (математика, физика, информатика) -->
+                <div>
+                    <label for="email">Адрес электронной почты</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <label for="select">Выберите секцию</label>
+                <select name="select" id="select" required>
+                    
+                    <option value="0">Математика</option>
+                    <option value="1">Физика</option>
+                    <option value="2">Информатика</option>
+
+                </select>
+                <!-- доклад (переключатель), -->
+                <div>
+                    <label for="speaker">Доклад</label>
+                    <input type="checkbox"  name="speaker" id="speaker">
+                   
+                    
+                </div>
+
+                <!-- если есть доклад – то отображается поле для ввода темы. -->
+                <div>
+                   
+                        <label for="text">Тема доклада:</label>
+                        <br>
+                    
+                    <textarea name="text" id="text" cols="20" rows="3">
+                        
+                    </textarea>
+                </div>
+
+                <div>
+                    <label for="check">Формат участия:</label><br>
+                    <input type="radio" checked value="очное" name="check" id="regular"><label for="check">Очная Форма</label><br>
+                    <input type="radio"  value="дистанционное" name="check" id="remote"><label for="check">Дистанционная Форма</label><br>
+                    <input type="radio"  value="смешанное" name="check" id="mixed"><label for="check">Смашанная Форма</label>
+                </div>
+                <div>
+                    <input type="submit" value="Регистрация">
+                </div>
             </form>
     </main>
     <footer>
