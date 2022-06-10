@@ -1,0 +1,47 @@
+
+
+ 
+body
+{
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(255, 89, 0);
+    padding: 50px 0;
+
+   
+}
+main
+{
+    background-color: rgb(32, 115, 166);
+}
+
+footer
+{
+    background-color: rgb(41, 19, 113);
+    font: normal 12px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    color: white;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+}
+.clear { clear: both; height: 60px; }
+
+.wrapper
+{
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+}
+h1, h2, h3, h4, h5, h6
+{
+    color: white;
+    margin: 0px;
+}
+
+.menu{
+    display: inline;
+    background-color: rgb(41, 19, 113);
+ }
+
+
+

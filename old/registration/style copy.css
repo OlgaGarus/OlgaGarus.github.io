@@ -1,0 +1,116 @@
+
+html { 
+    background: url(image/photo-8.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ 
+body
+{
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    color: #fff;
+    padding: 50px 0;
+   
+}
+
+footer
+{
+    background-color: rgb(19, 113, 47);
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+}
+.clear { clear: both; height: 60px; }
+
+.wrapper
+{
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+}
+h1, h2, h3, h4, h5, h6
+{
+    color: white;
+    margin: 0px;
+}
+
+
+.container
+{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav li
+{
+    display: inline-block;
+    padding: 5px;
+}
+
+.flex-outer{
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.flex-outer div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.flex-outer > div:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.flex-outer div label {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > div > label
+{
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+
+.flex-outer div input:not([type='checkbox']),
+.flex-outer div textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer div button {
+    
+    margin-left: auto;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    
+}
+ 
+  
+  .container * {
+    box-sizing: border-box;
+  }
+
