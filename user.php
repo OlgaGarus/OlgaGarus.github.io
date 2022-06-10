@@ -4,20 +4,24 @@ $title = "Физико-Математическая Научная Конфер�
 include_once("components/header.php"); 
 ?> 
 <main>
-<table border = "1">
+    <div class="container">
+<div class="table-responsive">
+<table class="table table-striped">
+<thead>
     <tr><h3>
         
-        <td>ФИО</td>
-        <td>телефон</td>
-        <td>email</td>
-        <td>секция</td>
-        <td>дата рождения</td>
-        <td>доклад</td>
-        <td>Тема</td>
+    <th scope="col">ФИО</th>
+        <th scope="col">Телефон</th>
+        <th scope="col">Email</th>
+        <th scope="col">Секция</th>
+        <th scope="col">Дата рождения</th>
+        <th scope="col">Доклад</th>
+        <th scope="col">Тема</th>
 </h3>
     </tr>
+    </thead>
 
-
+    <tbody>
   
     <?php
     include_once("bd_config.php");
@@ -37,7 +41,10 @@ include_once("components/header.php");
     $results->free();
     $mysqli->close();
     ?>
+    </tbody>
     </table>
+</div>
+</div>
     </main>
     <?php
         include_once("components/footer.php");

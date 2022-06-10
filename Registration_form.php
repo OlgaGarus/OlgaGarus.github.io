@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
 <!--1. Создать форму регистрации участников конференции: (10 баллов)
 
@@ -10,8 +10,9 @@
 доклад (переключатель), 
 если есть доклад – то отображается поле для ввода темы. -->
 <?php
-include_once("components/head.php");
 $title = "Физико-Математическая Научная Конференция";
+include_once("components/head.php");
+
 include_once("components/header.php"); 
 
 if(isset($_POST['user_name']) && isset($_POST['tel_number']))
@@ -40,9 +41,9 @@ include_once("bd_config.php");
             <ul class="flex-outer">
             
             
-        <h1>
+        <h2>
                 Регистрация на конференцию
-            </h1>
+            </h2>
             <form  action="Registration_form.php" method="post">
                 <!-- Имя (должны быть указаны полностью фамилия, имя и отчество), -->
                 <div class="form-group row">
@@ -117,7 +118,7 @@ include_once("bd_config.php");
                 </div>
             </div>
                 <script src="JS.js"></script>
-                <fieldset class="form-group">
+               <!--  <fieldset class="form-group">
                     <div class="row">
                     <label for="check" class="col-form-label col-sm-5 pt-0">Формат участия:</label>
                     <div class="col-sm-7">
@@ -125,7 +126,7 @@ include_once("bd_config.php");
                     <input type="radio"  class="form-check-input" checked value="очное" name="check" id="regular"><label for="check" class="form-check-label" >Очная Форма</label><br>
                     <input type="radio"  class="form-check-input" value="дистанционное" name="check" id="remote"><label for="check" class="form-check-label" >Дистанционная Форма</label><br>
                     <input type="radio"  class="form-check-input" value="смешанное" name="check" id="mixed"><label for="check" class="form-check-label" >Смешанная Форма</label>
-                </div>
+                </div>-->
             </div>
         </div>
         </fieldset>

@@ -8,7 +8,7 @@ include_once("components/header.php");
 
 <main>
 <div class="container">
-<h3> Список пользователей</h3>
+<h3> Список участников конференции</h3>
 <div class="table-responsive">
 <table class="table table-striped" >
 <thead>
@@ -51,7 +51,7 @@ include_once("components/header.php");
 </div>
 </main>
 
-
+<div class="clear"></div>
 
 <?php
     include_once("components/footer.php")
